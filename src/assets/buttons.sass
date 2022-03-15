@@ -1,0 +1,32 @@
+@import "colors"
+
+button
+  margin-left: 5px
+  font-size: 15px
+  line-height: 15px
+  transition: background 0.2s
+  cursor: pointer
+  border-color: transparent
+  border-radius: 50%
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12)
+  &:active
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.28), 0 1px 3px 0 rgba(0, 0, 0, 0.24)
+    transform: translateY(1px)
+
+.button
+  &__small
+    padding: 5px 11px 5px 1px
+  &__big
+    padding: 9px
+  &__green
+    background: $green-1
+    &:hover
+      background: $green-2
+    &:active
+      background-color: $green-3
+  &__blue
+    background: $blue-1
+    &:hover
+      background: $blue-2
+    &:active
+      background-color: $blue-3

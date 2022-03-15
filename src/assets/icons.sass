@@ -1,0 +1,55 @@
+@import "colors"
+
+.icon
+  position: relative
+  display: inline-block
+  width: 15px
+  height: 15px
+  &:before, &:after
+    position: absolute
+    background-color: $white
+    content: ""
+    transform-origin: left bottom
+  &:hover
+    &:before, &:after
+      transition: transform 1s
+
+.add-icon
+  &:before
+    left: 6px
+    top: 0
+    height: 100%
+    width: 3px
+    transform: rotate(0deg)
+  &:after
+    right: -100%
+    bottom: 9px
+    height: 3px
+    width: 100%
+    transform: rotate(180deg)
+
+  &:hover
+    &:before
+      transform: rotate(360deg)
+    &:after
+      transform: rotate(-180deg)
+
+.check-icon
+  &:before
+    left: 0
+    top: 50%
+    height: 50%
+    width: 3px
+    transform: translateX(10px) rotate(-45deg)
+  &:after
+    left: 0
+    bottom: 0
+    height: 3px
+    width: 100%
+    transform: translateX(10px) rotate(-45deg)
+
+  &:hover
+    &:before
+      transform: translateX(10px) rotate(315deg)
+    &:after
+      transform: translateX(10px) rotate(-405deg)
